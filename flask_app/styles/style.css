@@ -1,106 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 :root {
-    --bar-width: 40px;
-    --bar-height: 5px;
-    --hamburger-gap:4px;
-    --foreground: white;
-    --background: rgb(95, 95, 95);
-    --hamburger-margin: 2.5rem;
-    --animation-timing: 200ms ease-in-out;
-    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-    --x-width: calc(var(--hamburger-height) * 1.41421356237)
+    --ct: #ffffff;
+    --section-height: calc(100vh - 95px);
 }
 
-.hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    gap: var(--hamburger-gap);
-    width: max-content;
-    position: absolute;
-    top: calc(var(--hamburger-margin) - 7px) ;
-    right: var(--hamburger-margin);
-    z-index: 999;
-    cursor: pointer;
+#ham-menu {
+    background-color: var(--ct);
+    border: none;
 }
 
-.hamburger-menu::before,
-.hamburger-menu::after,
-.hamburger-menu input {
-    content: "";
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--foreground);
-    border-radius: 100rem;
-    transform-origin: left center;
-    transition: opacity var(--animation-timing), 
-    width var(--animation-timing), 
-    rotate var(--animation-timing), 
-    translate var(--animation-timing),
-    background-color var(--animation-timing);
+#hamburger {
+    width: 6.45vw;
 }
 
-.hamburger-menu:has(input:checked)::before {
-    rotate: 45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
-}
-
-.hamburger-menu:has(input:checked)::after {
-    rotate: -45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
-}
-
-.hamburger-menu input {
-    appearance: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    pointer-events: none;
-}
-
-.hamburger-menu input:checked {
-    opacity: 0;
-    width: 0;
-}
-
-.sidebar {
-    animation: ;
-    visibility: visible;
-    transition: translate var(--animation-timing);
-    translate: +100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 1rem 6rem;
-    padding-top: 10rem;
-    background-color: var(--background);
-    color: var(--foreground);
-    min-height: 100VH;
-    max-width: 10rem;
-    z-index: 998;
-    opacity: 80%;
-}
-
-.hamburger-menu:has(input:checked) + .sidebar {
-    /* display: block; */
-    visibility: hidden;
-    translate: 0;
+#hamburger-nav {
+    
 }
 
 body {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .background_color {
-    background-color: #0066FF;
+    background-color: var(--ct);
 }
 
 #header {
@@ -108,6 +31,7 @@ body {
     top: 0;
     z-index: 900;
     height: 95px;
+    box-shadow: 0px -41px 72px 60px black;
 }
 
 .header_logo {
@@ -115,29 +39,90 @@ body {
 }
 
 .header_name {
-    font-size: 2.3rem;
+    font-size: 6.45vw;
+    color: black;
 }
 
 nav {
-    display: flex;
+    display: none;
 }
 
 .nav-hover {
-    color: white;
+    color: rgb(0, 0, 0);
     transition: .5s;
 }
 
 .nav-hover:hover {
-    color: black;
-    transition: .5s;
+    opacity: 20%;
+    transition: .3s;
 }
 
-@media (max-width: 862px) {
 
-    /* body {
-        background-color: black;
-    } */
-    .nav-links {
-        display: none;
+#bg-1 {
+    height: var(--section-height);
+    background-color: #000000;
+}
+
+#bg-1 h1 {
+    font-size: 10vw;
+}
+
+.span-name {
+    color: #1dc9df;
+}
+
+#bg-1 p {
+    font-size: 4vw;
+    color: #656565;
+}
+
+#bg-2 {
+    height: var(--section-height);
+    box-shadow: 0px 0px 72px 0px black;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .header_name {
+        font-size: 2.3rem;
+    }
+
+    #ham-menu {
+        height: auto;
+    }
+
+    #bg-1 p {
+        font-size: 2.7vw;
     }
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #bg-1 h1 {
+        font-size: 7vw;
+    }
+
+    #bg-1 p {
+        font-size: 2vw;
+    }
+}
+
+/* for the nav bar to look good */
+@media (min-width: 823px) {
+    #ham-menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
