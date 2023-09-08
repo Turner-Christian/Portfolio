@@ -20,14 +20,15 @@
             <div class="nav-links">
                 <ul class="d-flex list-unstyled align-items-center gap-3"
                     style="font-size: 1.7rem; margin-right: 5rem; margin-bottom: 0;">
-                    <li><a class="text-decoration-none nav-hover" href="#">HOME</a></li>
+                    <li><a class="text-decoration-none nav-hover" href="#bg-1">HOME</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">ABOUT</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">PROJECTS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
-        <button id="ham-menu" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+        <button id="ham-menu" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight">
             <img id="hamburger" src="../styles/icons8-hamburger-50.png" alt="nav icon">
         </button>
         <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -35,9 +36,9 @@
                 <button type="button" class="btn-close text-reset text-end" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body d-flex align-items-center justify-content-center">
                 <ul id="hamburger-nav" class="d-flex flex-column list-unstyled align-items-center gap-3">
-                    <li><a class="text-decoration-none nav-hover" href="#">HOME</a></li>
+                    <li><a class="text-decoration-none nav-hover" href="#bg-1">HOME</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">ABOUT</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">PROJECTS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">CONTACT</a></li>
@@ -48,12 +49,34 @@
     <section id="bg-1" class="d-flex align-items-center justify-content-center">
         <div>
             <h1 class="text-center text-white">HI, I'M <span class="span-name">CHRISTIAN</span></h1>
-            <p class="text-center">I'm a Full-Stack Developer that enjoys building <br> websites and applications for businesses all across the globe. </p>
+            <p class="text-center">I'm a Full-Stack Developer that enjoys building <br> websites and applications for
+                businesses all across the globe. </p>
+            <div id="home-to-projects" class="text-center">
+                <button>PROJECTS</button>
+            </div>
         </div>
     </section>
-    <section id="bg-2">
-
+    <section id="bg-2" class="d-flex align-items-center justify-content-center">
+        <div>
+            <h2 class="text-center text-white">Lorem, ipsum dolor.</h2>
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis at fugit culpa natus!</p>
+        </div>
     </section>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasRight'));
+        let links = document.querySelectorAll('#hamburger-nav a');
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                offcanvas.hide();
+            });
+        });
+    });
+</script>
+
 </html>
