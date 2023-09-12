@@ -21,7 +21,7 @@
                 <ul class="d-flex list-unstyled align-items-center gap-3"
                     style="font-size: 1.7rem; margin-right: 5rem; margin-bottom: 0;">
                     <li><a class="text-decoration-none nav-hover" href="#bg-1">HOME</a></li>
-                    <li><a class="text-decoration-none nav-hover" href="#">ABOUT</a></li>
+                    <li><a class="text-decoration-none nav-hover" href="#">SKILLS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">PROJECTS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">CONTACT</a></li>
                 </ul>
@@ -39,14 +39,14 @@
             <div class="offcanvas-body d-flex align-items-center justify-content-center">
                 <ul id="hamburger-nav" class="d-flex flex-column list-unstyled align-items-center gap-3">
                     <li><a class="text-decoration-none nav-hover" href="#bg-1">HOME</a></li>
-                    <li><a class="text-decoration-none nav-hover" href="#">ABOUT</a></li>
+                    <li><a class="text-decoration-none nav-hover" href="#">SKILLS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">PROJECTS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <section id="bg-1" class="d-flex align-items-center justify-content-center">
+    <section id="bg-1" class="d-flex flex-column align-items-center justify-content-center">
         <div>
             <h1 class="text-center text-white">HI, I'M <span class="span-name">CHRISTIAN</span></h1>
             <p class="text-center">I'm a Full-Stack Developer that enjoys building <br> websites and applications for
@@ -55,11 +55,82 @@
                 <button>PROJECTS</button>
             </div>
         </div>
+        <div id="down-arrow-container">
+            <img src="../styles/icons8-down-arrow-50.png" alt="down arrow icon">
+        </div>
     </section>
-    <section id="bg-2" class="d-flex align-items-center justify-content-center">
-        <div>
-            <h2 class="text-center text-white">Lorem, ipsum dolor.</h2>
-            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis at fugit culpa natus!</p>
+    <section id="bg-2">
+        <div id="skills-div" class="text-white">
+            <div>
+                <h2 class="mt-5">SKILLS</h2>
+                <hr>
+            </div>
+            <div class="d-flex border border-white rounded p-2  flex-column">
+                <div id="skill-container-1" class="skill-container">
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-html5-48.png" alt="html5">
+                        <span class="tooltiptext">HTML5</span>
+                    </div>
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-css3-48.png" alt="css3">
+                        <span class="tooltiptext">CSS3</span>
+                    </div>
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-javascript-48.png" alt="javascript">
+                        <span class="tooltiptext">JAVASCRIPT</span>
+                    </div>
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-python-48.png" alt="python">
+                        <span class="tooltiptext">PYTHON</span>
+                    </div>
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-react-48.png" alt="react">
+                        <span class="tooltiptext">REACT</span>
+                    </div>
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-flask-48 (1).png" alt="flask">
+                        <span class="tooltiptext">FLASK</span>
+                    </div>
+                </div>
+                <div id="skill-container-2" class="skill-container">
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-mongodb-48.png" alt="mongodb">
+                        <span class="tooltiptext">MONGO DB</span>
+                    </div>
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-mysql-48.png" alt="sql">
+                        <span class="tooltiptext">MYSQL</span>
+                    </div>
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-node-js-48.png" alt="node.js">
+                        <span class="tooltiptext">NODE.JS</span>
+                    </div>
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-git-48.png" alt="git">
+                        <span class="tooltiptext">GIT</span>
+                    </div>
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-visual-studio-48.png" alt="vscode">
+                        <span class="tooltiptext">VSCODE</span>
+                    </div>
+                    <div class="custom-tooltip">
+                        <img src="../styles/icons/icons8-bootstrap-48.png" alt="bootstrap">
+                        <span class="tooltiptext">BOOTSTRAP</span>
+                    </div>
+                </div>
+                
+            </div>
+            <hr>
+        </div>
+        <div id="about-div" class="about-section text-white">
+            <div>
+                <h2 class="d-flex mt-5 justify-content-end">ABOUT</h2>
+                <hr>
+            </div>
+            <div id="about-content" class="border rounded border-white p-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vero voluptatem nulla error assumenda doloremque, eligendi corporis, nemo accusamus expedita aperiam nisi exercitationem commodi ex fugiat velit? Ipsa quae nisi soluta eos quia, sit eveniet?</p>
+            </div>
+            <hr>
         </div>
     </section>
 </body>
