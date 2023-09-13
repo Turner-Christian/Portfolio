@@ -21,7 +21,7 @@
                 <ul class="d-flex list-unstyled align-items-center gap-3"
                     style="font-size: 1.7rem; margin-right: 5rem; margin-bottom: 0;">
                     <li><a class="text-decoration-none nav-hover" href="#bg-1">HOME</a></li>
-                    <li><a class="text-decoration-none nav-hover" href="#">SKILLS</a></li>
+                    <li><a class="text-decoration-none nav-hover" href="#bg-2">SKILLS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">PROJECTS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">CONTACT</a></li>
                 </ul>
@@ -39,7 +39,7 @@
             <div class="offcanvas-body d-flex align-items-center justify-content-center">
                 <ul id="hamburger-nav" class="d-flex flex-column list-unstyled align-items-center gap-3">
                     <li><a class="text-decoration-none nav-hover" href="#bg-1">HOME</a></li>
-                    <li><a class="text-decoration-none nav-hover" href="#">SKILLS</a></li>
+                    <li><a class="text-decoration-none nav-hover" href="#bg-2">SKILLS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">PROJECTS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">CONTACT</a></li>
                 </ul>
@@ -55,9 +55,9 @@
                 <button>PROJECTS</button>
             </div>
         </div>
-        <div id="down-arrow-container">
+        <!-- <div id="down-arrow-container">
             <img src="../styles/icons8-down-arrow-50.png" alt="down arrow icon">
-        </div>
+        </div> -->
     </section>
     <section id="bg-2">
         <div id="skills-div" class="text-white">
@@ -65,7 +65,7 @@
                 <h2 class="mt-5">SKILLS</h2>
                 <hr>
             </div>
-            <div class="d-flex border border-white rounded p-2  flex-column">
+            <div id="skill-container-wrapper" class="d-flex p-2 flex-column">
                 <div id="skill-container-1" class="skill-container">
                     <div class="custom-tooltip">
                         <img src="../styles/icons/icons8-html5-48.png" alt="html5">
@@ -127,11 +127,14 @@
                 <h2 class="d-flex mt-5 justify-content-end">ABOUT</h2>
                 <hr>
             </div>
-            <div id="about-content" class="border rounded border-white p-2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vero voluptatem nulla error assumenda doloremque, eligendi corporis, nemo accusamus expedita aperiam nisi exercitationem commodi ex fugiat velit? Ipsa quae nisi soluta eos quia, sit eveniet?</p>
+            <div id="about-content" class="p-2">
+                <p>Hello! My name is Christian and I am a developer. In highschool I took a AP computer science class, and that class showed me that I love to code. In 2022 I started learning more about code using Harvard's CS50 free courseware. In 2023 I enrolled in Coding Dojo and graduated with a red belt in the Javascript full stack, as well as the Python full stack! Other facts about me is that I love music and play local shows in a band! I also am a avid gamer and love to be competitive.</p>
             </div>
             <hr>
         </div>
+    </section>
+    <section id="bg-3">
+        
     </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

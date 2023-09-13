@@ -2,8 +2,8 @@
 
 :root {
     --ct: #ffffff;
-    --header-container-height: calc(100vh - 95px);
-    --bg-height: calc(100vh - 10rem);
+    --header-container-height: calc(100vh - 60px);
+    --bg-height: calc(70rem - 10rem);
 }
 
 /* Tooltip container */
@@ -84,7 +84,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 900;
-    height: 95px;
+    height: 60px;
     box-shadow: 0px -41px 72px 60px black;
 }
 
@@ -133,10 +133,10 @@ nav {
     cursor: default;
 }
 
-#down-arrow-container {
+/* #down-arrow-container {
     position: absolute;
     bottom: 2rem;
-}
+} */
 
 #down-arrow-container img {
     width: 7vw;
@@ -145,7 +145,7 @@ nav {
 
 #home-to-projects {
     font-size: 4vw;
-    margin-top: 8rem;
+    margin-top: 4vh;
 }
 
 #home-to-projects button {
@@ -166,7 +166,7 @@ nav {
 
 #bg-2 {
     height: var(--bg-height);
-    background-color: #0d0d0d;
+    background-color: #070707;
     cursor: default;
     display: flex;
     flex-direction: column;
@@ -174,16 +174,30 @@ nav {
     align-items: center;
 }
 
-
-
 #bg-2 h2 {
     font-size: 8vw;
 }
 
 #about-content {
     width: 324.26px;
+    border: white solid 1px;
+    border-radius: .5rem;
 }
 
+#skill-container-wrapper {
+    border: white solid 1px;
+    border-radius: .5rem;
+}
+
+#bg-3 {
+    height: var(--bg-height);
+    background-color: #000000;
+    cursor: default;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -229,11 +243,13 @@ nav {
     }
 
     #skill-container-1 {
-        
+        /* margin: 1rem; */
+        margin: 1vh;
     }
 
     #skill-container-2 {
-       
+        /* margin: 1rem; */
+        margin: 1vh;
     }
 }
 
@@ -259,7 +275,17 @@ nav {
         width: 5vw;
     }
 
+    #skill-container-wrapper {
+        border: none;
+    }
 
+    #about-content {
+        border: none;
+    }
+
+    #about-content p {
+        font-size: 1.3rem;
+    }
 }
 
 /* for the nav bar to look good */
@@ -291,6 +317,22 @@ nav {
 
     #down-arrow-container img {
         width: 4vw;
+    }
+
+    #skills-div {
+        width: 50%;
+    }
+
+    #about-div {
+        width: 50%;
+    }
+
+    #bg-2 h2 {
+        font-size: 5rem;
+    }
+
+    #about-content p {
+        text-align: center;
     }
 }
 
