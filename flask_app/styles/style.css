@@ -165,7 +165,6 @@ nav {
 
 
 #bg-2 {
-    height: var(--bg-height);
     background-color: rgb(255, 255, 255);
     cursor: default;
     display: flex;
@@ -177,34 +176,50 @@ nav {
 #bg-2 h2 {
     font-size: 8vw;
     color: black;
-}
-
-#about-content {
-    width: 324.26px;
-    border: black solid 2px;
-    border-radius: .5rem;
-    background-color: black;
-    box-shadow: 0px 0px 5px 1px white;
     text-align: center;
-    max-width: 600px;
 }
 
-#skill-container-wrapper {
-    box-shadow: 0px 0px 5px 1px white;
-    border-radius: .5rem;
-    background-color: black;
-    max-width: 600px;
+#bg-2-wrapper {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+#bg-2 .skills-div {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+#bg-2 .skills-content {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+#bg-2 .skills-content p {
+    background-color: #7a7a7a;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+#bg-2 .about-div {
+    width: 100%;
+}
+
+#bg-2 .about-content {
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
 
 #bg-3 {
-    height: var(--bg-height);
     background-color: #000000;
     cursor: default;
-    
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -229,36 +244,24 @@ nav {
         width: 6vw;
     }
 
-    #skills-div {
-        width: 85%;
+    #bg-2 h2 {
+        font-size: 3.5rem;
+        color: black;
+        text-align: center;
     }
 
-    #about-div {
-        width: 85%;
+    #bg-2-wrapper {
+        align-items: center;
     }
 
-    #about-content {
-        width: auto;
+    #bg-2 .skills-div {
+        width: 500px;
     }
 
-    .skill-container {
-        display: flex;
-        justify-content: space-evenly;
+    #bg-2 .about-div {
+        width: 500px;
     }
 
-    .skill-container img {
-        width: 3.5rem;
-    }
-
-    #skill-container-1 {
-        /* margin: 1rem; */
-        margin: 1vh;
-    }
-
-    #skill-container-2 {
-        /* margin: 1rem; */
-        margin: 1vh;
-    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -283,16 +286,16 @@ nav {
         width: 5vw;
     }
 
-    #skill-container-wrapper {
-        border: none;
+    #bg-2 .skills-div {
+        width: 700px;
     }
 
-    #about-content {
-        border: none;
+    #bg-2 .about-div {
+        width: 700px;
     }
 
-    #about-content p {
-        font-size: 1.3rem;
+    #bg-2 .skills-content {
+        padding: 1rem 5rem;
     }
 }
 
@@ -335,12 +338,40 @@ nav {
         width: 50%;
     }
 
+    #bg-2-wrapper {
+        padding: 1rem;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     #bg-2 h2 {
         font-size: 5rem;
     }
 
-    #about-content p {
-        text-align: center;
+    #bg-2 .skills-div {
+        align-self: start;
+        margin-bottom: 0;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        border: #000000 2px solid;
+        max-width: 550px;
+    }
+
+    #bg-2 .skills-content {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    #bg-2 .about-div {
+        margin: 1rem;
+        border: #000000 2px solid;
+        padding: 1rem;
+        border-radius: 5px;
+        max-width: 550px;
     }
 }
 
