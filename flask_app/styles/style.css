@@ -6,54 +6,6 @@
     --bg-height: calc(70rem - 10rem);
 }
 
-/* Tooltip container */
-.custom-tooltip {
-    position: relative;
-    display: inline-block;
-
-}
-
-/* Tooltip text */
-.custom-tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
-
-}
-
-/* Tooltip arrow */
-.custom-tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #000000 transparent transparent transparent;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.custom-tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
 #ham-menu {
     background-color: var(--ct);
     border: none;
@@ -189,11 +141,14 @@ nav {
 #bg-2 .skills-div {
     width: 100%;
     margin-bottom: 2rem;
+    height: auto;
 }
 
 
-#bg-2 .skills-content {
+#bg-2 .skills-content .skills-inner {
     display: flex;
+    justify-content: center;
+    /* align-items: center; */
     gap: 5px;
     flex-wrap: wrap;
     padding: 1rem;
@@ -205,10 +160,18 @@ nav {
     padding: 5px;
     border-radius: 5px;
     margin: 0;
+
+}
+#bg-2 .skills-content img {
+    background-color: #7a7a7a;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #bg-2 .about-div {
     width: 100%;
+    height: auto;
 }
 
 #bg-2 .about-content {
@@ -220,6 +183,50 @@ nav {
 #bg-3 {
     background-color: #000000;
     cursor: default;
+    color: white;
+}
+
+#bg-3-wrapper {
+    padding: 1rem;
+    width: 100%;
+}
+
+#bg-3 h2 {
+    font-size: 8vw;
+    text-align: center;
+}
+
+#bg-3 .proj {
+    padding: 1rem;
+    background-color: #121212;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#bg-3 .proj h3{
+    color: #1dc9df;
+    text-decoration: underline;
+}
+
+#bg-3 .proj-alt h3 {
+    text-align: end;
+}
+
+#bg-3 .proj-picture {
+    width: 100%;
+    height: auto;
+}
+
+#bg-3 .proj-desc {
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+#bg-3 .proj-picture img {
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -330,12 +337,14 @@ nav {
         width: 4vw;
     }
 
-    #skills-div {
+    .skills-div {
         width: 50%;
+        box-shadow: -20px 20px 13px 0px black;
     }
 
-    #about-div {
+    .about-div {
         width: 50%;
+        box-shadow: 20px 20px 13px 0px black;
     }
 
     #bg-2-wrapper {
@@ -343,6 +352,9 @@ nav {
         width: 100%;
         flex-direction: row;
         justify-content: center;
+        gap: 5rem;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
     }
 
     #bg-2 h2 {
@@ -372,6 +384,10 @@ nav {
         padding: 1rem;
         border-radius: 5px;
         max-width: 550px;
+    }
+
+    #bg-2 .skills-content img {
+        transform: scale(.85);
     }
 }
 
