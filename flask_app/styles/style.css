@@ -229,6 +229,8 @@ nav {
     box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
 }
 
+/* transform for the proj cards and the img */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .header_name {
@@ -417,10 +419,19 @@ nav {
     #bg-3 .proj {
         width: 45%;
         margin: 0;
-        margin: 10px;
+        margin: 20px 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 2rem;
+        transition: .2s ease-in-out;
+
+    }
+
+    .proj:hover {
+        box-shadow: 0px 15px 0px 0px #080808;
+        transform: translateY(-20px);
+        transition: .2s ease-in-out;
     }
 
     #bg-3 .proj-alt h3 {
@@ -433,9 +444,6 @@ nav {
         text-align: center;
     }
 
-    /* #bg-3 .proj-picture {
-        justify-self: end;
-    } */
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
