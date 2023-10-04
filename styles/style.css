@@ -198,15 +198,17 @@ nav {
 
 #bg-3 .proj {
     padding: 1rem;
-    background-color: #121212;
+    background-color: #6c6c6c;
     border-radius: 5px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 #bg-3 .proj h3{
-    color: #1dc9df;
-    text-decoration: underline;
+    color: #000000;
+    /* text-decoration: underline; */
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 #bg-3 .proj-alt h3 {
@@ -315,6 +317,14 @@ nav {
         font-size: 1.3rem;
         padding: 10px;
     }
+
+    #bg-3-wrapper {
+        padding: 1rem 3rem;
+    }
+
+    #bg-3 .proj {
+        padding: 3rem;
+    }
 }
 
 /* for the nav bar to look good */
@@ -380,6 +390,12 @@ nav {
         border-radius: 5px;
         border: #000000 2px solid;
         max-width: 550px;
+        transition: .2s ease-in-out;
+    }
+
+    .skills-div:hover {
+        transform: scale(1.03);
+        transition: .2s ease-in-out;
     }
 
     #bg-2 .skills-content {
@@ -395,6 +411,12 @@ nav {
         padding: 1rem;
         border-radius: 5px;
         max-width: 550px;
+        transition: .2s ease-in-out;
+    }
+
+    .about-div:hover {
+        transform: scale(1.03);
+        transition: .2s ease-in-out;
     }
 
     #bg-2 .skills-content img {
@@ -429,7 +451,7 @@ nav {
     }
 
     .proj:hover {
-        box-shadow: 0px 15px 0px 0px #080808;
+        box-shadow: 0px 15px 0px 0px #3e3e3e;
         transform: translateY(-20px);
         transition: .2s ease-in-out;
     }
@@ -439,8 +461,6 @@ nav {
     }
 
     #bg-3 .proj h3{
-        color: #1dc9df;
-        text-decoration: underline;
         text-align: center;
     }
 
