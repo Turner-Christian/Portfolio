@@ -270,7 +270,7 @@ textarea {
 }
 
 #bg-4 textarea {
-    resize: none !important;
+    resize: none;
     height: 7rem;
     margin-bottom: 1rem;
 }
@@ -358,6 +358,12 @@ footer a {
     #bg-3 .proj-picture {
         padding: 2rem;
     }
+
+    #bg-4 h2 {
+        font-size: 3.5rem;
+        color: black;
+        text-align: center;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -409,6 +415,10 @@ footer a {
 
     #bg-3 .proj-picture {
         padding: 2rem;
+    }
+
+    #bg-4-wrapper {
+        padding: 1rem 3rem;
     }
 }
 
@@ -549,6 +559,9 @@ footer a {
         text-align: center;
     }
 
+    #bg-4 h2 {
+        font-size: 5rem;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -575,6 +588,31 @@ footer a {
 
     #bg-3-content-wrapper {
         width: 1150px;
+    }
+
+    #bg-4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #bg-4-wrapper {
+        width: 1150px;
+    }
+
+    #bg-4 #submit-button button {
+        width: 30%;
+        transition: .2s ease-in-out;
+    }
+
+    #contact-me {
+        padding: 1rem 7rem;
+    }
+
+    #bg-4 #submit-button button:hover {
+        transition: .2s ease-in-out;
+        color: black;
+        background-color: #1dc9df;
+        border: white 2px solid;
     }
 }
 
