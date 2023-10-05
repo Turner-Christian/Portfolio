@@ -22,7 +22,7 @@
                     style="font-size: 1.7rem; margin-right: 5rem; margin-bottom: 0;">
                     <li><a class="text-decoration-none nav-hover" href="#bg-1">HOME</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#bg-2">SKILLS</a></li>
-                    <li><a class="text-decoration-none nav-hover" href="#">PROJECTS</a></li>
+                    <li><a class="text-decoration-none nav-hover" href="#bg-3">PROJECTS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -40,7 +40,7 @@
                 <ul id="hamburger-nav" class="d-flex flex-column list-unstyled align-items-center gap-3">
                     <li><a class="text-decoration-none nav-hover" href="#bg-1">HOME</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#bg-2">SKILLS</a></li>
-                    <li><a class="text-decoration-none nav-hover" href="#">PROJECTS</a></li>
+                    <li><a class="text-decoration-none nav-hover" href="#bg-3">PROJECTS</a></li>
                     <li><a class="text-decoration-none nav-hover" href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -53,7 +53,7 @@
             <p class="text-center">I'm a Full-Stack Developer that enjoys building <br> websites and applications for
                 businesses all across the globe. </p>
             <div id="home-to-projects" class="text-center">
-                <button>PROJECTS</button>
+                <button><a href="#bg-3" class="text-decoration-none text-black">PROJECTS</a></button>
             </div>
         </div>
     </section>
@@ -126,8 +126,9 @@
                         <h3>Portfolio Website</h3>
                     </div>
                     <div class="proj-desc">
-                        <p>This is my portfolio website that was built showing the skills I have! This portfolio has to be
-                            one of the coolest projects I have done!</p>
+                        <p>This is my portfolio website that was built showing the skills I have! This portfolio has to
+                            be
+                            one of the coolest projects I have done! Made with HTML, CSS, and Bootstrap</p>
                     </div>
                     <div class="proj-picture">
                         <a href="#">
@@ -135,14 +136,16 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="proj proj-alt" id="proj-2">
                     <div class="proj-header">
                         <h3>NewLeaf Website</h3>
                     </div>
                     <div class="proj-desc">
-                        <p>This website is about tracking planted trees! You can view planted trees from across the world
-                            showing what kind of tree, where, and the reason for planting the tree!</p>
+                        <p>This website is about tracking planted trees! You can view planted trees from across the
+                            world
+                            showing what kind of tree, where, and the reason for planting the tree! Made with Python,
+                            FLASK, and MySQL</p>
                     </div>
                     <div class="proj-picture">
                         <a href="#">
@@ -150,7 +153,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="proj" id="proj-3">
                     <div class="proj-header">
                         <h3>NoteWall</h3>
@@ -164,13 +167,14 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="proj proj-alt" id="proj-4">
                     <div class="proj-header">
                         <h3>RiffHard Clone</h3>
                     </div>
                     <div class="proj-desc">
-                        <p>RiffHard is a website used to get better at playing guitar! Here is a direct clone that I made.</p>
+                        <p>RiffHard is a website used to get better at playing guitar! Here is a direct clone that I
+                            made.</p>
                     </div>
                     <div class="proj-picture">
                         <a href="#">
@@ -183,12 +187,48 @@
         </div>
     </section>
     <section id="bg-4">
-        <form target="_blank" action="https://formsubmit.co/el/beseco" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-            
-        </form>
+        <div id="bg-4-wrapper">
+
+            <div>
+                <h2>CONTACT <span class="span-name">ME</span></h2>
+                <hr>
+            </div>
+
+            <form id="contact-me" target="_blank" action="https://formsubmit.co/el/beseco" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                <div id="name-email">
+                    <div class="form-row">
+                        <input id="nameInput" type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-row">
+                        <input id="emailInput" type="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <div id="submit-button" class="form-row">
+                    <button type="submit">Submit Form</button>
+                </div>
+
+            </form>
+
+        </div>
     </section>
+    <footer>
+            <h4>SOCIALS</h4>
+            <div id="socials">
+                <a href="">LinkedIn</a>
+                |
+                <a href="">GitHub</a>
+            </div>
+        </div>
+        <hr>
+        <div id="copyright">
+            <p>@Copyright 2023. Made by Christian Turner</p>
+        </div>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

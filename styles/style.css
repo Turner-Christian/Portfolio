@@ -162,6 +162,7 @@ nav {
     margin: 0;
 
 }
+
 #bg-2 .skills-content img {
     background-color: #7a7a7a;
     color: white;
@@ -204,7 +205,7 @@ nav {
     margin-bottom: 2rem;
 }
 
-#bg-3 .proj h3{
+#bg-3 .proj h3 {
     color: #000000;
     /* text-decoration: underline; */
     text-transform: uppercase;
@@ -231,7 +232,83 @@ nav {
     box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
 }
 
-/* transform for the proj cards and the img */
+#bg-4 {
+    background-color: #ffffff;
+    cursor: default;
+    color: rgb(0, 0, 0);
+}
+
+#bg-4-wrapper {
+    padding: 1rem;
+    width: 100%;
+}
+
+#bg-4 h2 {
+    font-size: 8vw;
+    text-align: center;
+}
+
+#contact-me {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#bg-4 .form-row {
+    width: 100%;
+    font-size: 1.1rem;
+
+}
+
+#bg-4 .form-row input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 2px black;
+}
+
+#bg-4 textarea {
+    resize: none !important;
+    height: 7rem;
+    margin-bottom: 1rem;
+}
+
+#name-email {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#submit-button {
+    text-align: center;
+}
+
+#bg-4 .form-row button {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+}
+
+
+footer {
+    background-color: #000000;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+#copyright {
+    font-size: .7rem;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -276,6 +353,10 @@ nav {
     #bg-3 h2 {
         font-size: 3.5rem;
         text-align: center;
+    }
+
+    #bg-3 .proj-picture {
+        padding: 2rem;
     }
 }
 
@@ -324,6 +405,10 @@ nav {
 
     #bg-3 .proj {
         padding: 3rem;
+    }
+
+    #bg-3 .proj-picture {
+        padding: 2rem;
     }
 }
 
@@ -460,7 +545,7 @@ nav {
         text-align: center;
     }
 
-    #bg-3 .proj h3{
+    #bg-3 .proj h3 {
         text-align: center;
     }
 
